@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+header{
+    height: 60px;
+    background-color:#FFFF66;
+    }
+.head{
+    padding-left:20px;
+    padding-top: 10px;
+    
+}
+.body{
+    background-color: #FFFFCC;
+}
+.logo{
+    font-size: 30px;
+    margin: 20px;
+    padding-right: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 50px 30px;
+    margin-bottom: 250px;
+}
+.text{
+    font-size: 20px;
+}
+.picher_form{
+    margin: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.submit{
+    margin: 10px;
+}
+.back{
+    margin: 10px;
+
+}
+.answer{
+    font-size: 40px;
+    text-align: center;
+    line-height: 2
+}
+.answer.money_answer{
+    text-align: left;
+}
+.result{
+    margin: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.money{
+    text-shadow: 2px 2px 4px silver;
+    font-weight: bold;
+}
+.error{
+    padding-left: 30px;
+    font-size: 20px;
+    color: red;
+}
+footer{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+}

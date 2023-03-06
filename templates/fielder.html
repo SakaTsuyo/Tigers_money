@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+    {% block content %}
+
+<div class="logo">野手</div>
+<div class="content">
+    <form action="/fielder" method="POST" name="fielder_form">
+        <!-- 「name」属性を「input_text」と定義-->
+        <p class="picher_form">
+            <label><span>打率</label>
+            <input type="text" name="average" placeholder="打率">
+        </p>
+        <p class="picher_form">
+            <label><span>試合</label>
+            <input type="text" name="game_f" placeholder="試合">
+        </p>
+        <p class="picher_form">
+            <label><span>打席数</label>
+            <input type="text" name="bat" placeholder="打席数">
+        </p>
+        <p class="picher_form">
+            <label><span>打数</label>
+            <input type="text" name="number" placeholder="打数">
+        </p>
+        <p class="picher_form">
+            <label><span>安打</label>
+            <input type="text" name="hit_f" placeholder="安打">
+        </p>
+        <p class="picher_form">
+            <label><span>本塁打</label>
+            <input type="text" name="HR" placeholder="本塁打">
+        </p>
+        <p class="picher_form">
+            <label><span>打点</label>
+            <input type="text" name="RBI" placeholder="打点">
+        </p>
+        <p class="picher_form">
+            <label><span>盗塁</label>
+            <input type="text" name="steal" placeholder="盗塁">
+        </p>
+        <p class="picher_form">
+            <label><span>四球</label>
+            <input type="text" name="walk_f" placeholder="四球">
+        </p>
+        <p class="picher_form">
+            <label><span>死球</label>
+            <input type="text" name="HP_f" placeholder="死球">
+        </p>
+        <p class="picher_form">
+            <label><span>三振</label>
+            <input type="text" name="strikeout_f" placeholder="三振">
+        </p>
+        <p class="picher_form">
+            <label><span>犠打</label>
+            <input type="text" name="sacrifice" placeholder="犠打">
+        </p>
+        <p class="picher_form">
+            <label><span>併殺打</label>
+            <input type="text" name="double" placeholder="併殺打">
+        </p>
+        <p class="picher_form">
+            <label><span>出塁率</label>
+            <input type="text" name="base" placeholder="WHIP">
+        </p>
+        <p class="picher_form">
+            <label><span>長打率</label>
+            <input type="text" name="slugging" placeholder="長打率">
+        </p>
+        <p class="picher_form">
+            <label><span>OPS</label>
+            <input type="text" name="OPS" placeholder="OPS">
+        </p>
+        <input type="submit" value="予測する" class="btn btn-outline-info back">
+    </form>
+</div>
+<div class="error">
+    {{error_message}}
+</div>
+</div>
+    <a href="/" class="btn btn-outline-info back">戻る</a>
+    <p>Hello World filder</p>
+{% endblock %}

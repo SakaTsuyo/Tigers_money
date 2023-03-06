@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+    {% block content %}
+
+    <div class = 'answer'>
+        <p class="money_answer">
+            年俸は<br>
+            <p class="money">{{result}}万円</p>
+        </p>
+    </div>
+
+<div class="result">
+    <p>
+        <label><span>防御率</label>
+        {{picher["epa"]}}
+    </p>
+    <p>
+        <label><span>試合</label>
+            {{picher["game"]}}
+    </p>
+    <p>
+        <label><span>勝利</label>
+            {{picher["win"]}}
+    </p>
+    <p>
+        <label><span>敗北</label>
+            {{picher["lose"]}}
+    </p>
+    <p>
+        <label><span>セーブ</label>
+            {{picher["save"]}}
+    </p>
+    <p>
+        <label><span>ホールド</label>
+            {{picher["hold"]}}
+    </p>
+    <p>
+        <label><span>勝率</label>
+            {{picher["WR"]}}
+    </p>
+    <p>
+        <label><span>打者</label>
+            {{picher["batter"]}}
+    </p>
+    <p>
+        <label><span>投球回</label>
+            {{picher["IP"]}}
+    </p>
+    <p>
+        <label><span>被安打</label>
+            {{picher["hit"]}}
+    </p>
+    <p>
+        <label><span>被本塁打</label>
+            {{picher["HRA"]}}
+    </p>
+    <p>
+        <label><span>与四球</label>
+            {{picher["walk"]}}
+    </p>
+    <p>
+        <label><span>与死球</label>
+            {{picher["HP"]}}
+    </p>
+    <p>
+        <label><span>奪三振</label>
+            {{picher["strikeout"]}}
+    </p>
+    <p>
+        <label><span>失点</label>
+            {{picher["CP"]}}
+    </p>
+    <p>
+        <label><span>自責点</label>
+            {{picher["selfblame"]}}
+    </p>
+    <p>
+        <label><span>WHIP</label>
+            {{picher["WHIP"]}}
+    </p>
+    <p>
+        <label><span>DIPS</label>
+            {{picher["DIPS"]}}
+    </p>
+</div>
+<a href="/" class="btn btn-outline-info back">ホーム戻る</a>
+<a href="/picher" class="btn btn-outline-info back">入力に戻る</a>
+{% endblock %}

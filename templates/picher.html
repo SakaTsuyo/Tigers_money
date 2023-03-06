@@ -1,0 +1,90 @@
+
+{% extends 'layout.html' %}
+    {% block content %}
+
+<div class="logo">投手</div>
+<div class="content">
+    <form action="/picher" method="POST" name="picher_form">
+        <!-- 「name」属性を「input_text」と定義-->
+        <p class="picher_form">
+            <label><span>防御率:</label>
+            <input type="text" name="epa" placeholder="防御率">
+        </p>
+        <p class="picher_form">
+            <label><span>試合:</label>
+            <input type="text" name="game" placeholder="試合">
+        </p>
+        <p class="picher_form">
+            <label><span>勝利</label>
+            <input type="text" name="win" placeholder="勝利">
+        </p>
+        <p class="picher_form">
+            <label><span>敗北</label>
+            <input type="text" name="lose" placeholder="敗北">
+        </p>
+        <p class="picher_form">
+            <label><span>セーブ</label>
+            <input type="text" name="save" placeholder="セーブ">
+        </p>
+        <p class="picher_form">
+            <label><span>ホールド</label>
+            <input type="text" name="hold" placeholder="ホールド">
+        </p>
+        <p class="picher_form">
+            <label><span>勝率</label>
+            <input type="text" name="WR" placeholder="勝率">
+        </p>
+        <p class="picher_form">
+            <label><span>打者</label>
+            <input type="text" name="batter" placeholder="打者">
+        </p>
+        <p class="picher_form">
+            <label><span>投球回</label>
+            <input type="text" name="IP" placeholder="投球回">
+        </p>
+        <p class="picher_form">
+            <label><span>被安打</label>
+            <input type="text" name="hit" placeholder="被安打">
+        </p>
+        <p class="picher_form">
+            <label><span>被本塁打</label>
+            <input type="text" name="HRA" placeholder="被本塁打">
+        </p>
+        <p class="picher_form">
+            <label><span>与四球</label>
+            <input type="text" name="walk" placeholder="与四球">
+        </p>
+        <p class="picher_form">
+            <label><span>与死球</label>
+            <input type="text" name="HP" placeholder="与死球">
+        </p>
+        <p class="picher_form">
+            <label><span>奪三振</label>
+            <input type="text" name="strikeout" placeholder="奪三振">
+        </p>
+        <p class="picher_form">
+            <label><span>失点</label>
+            <input type="text" name="CP" placeholder="防御率">
+        </p>
+        <p class="picher_form">
+            <label><span>自責点</label>
+            <input type="text" name="selfblame" placeholder="自責点">
+        </p>
+        <p class="picher_form">
+            <label><span>WHIP</label>
+            <input type="text" name="WHIP" placeholder="WHIP">
+        </p>
+        <p class="picher_form">
+            <label><span>DIPS</label>
+            <input type="text" name="DIPS" placeholder="DIPS">
+        </p>
+        <input class="btn btn-outline-info submit" type="submit" value="予測する">
+    </form>
+</div>
+<div class="error">
+    {{error_message}}
+</div>
+</div>
+    
+    <a href="/" class="btn btn-outline-info back">戻る</a>
+    {% endblock %}

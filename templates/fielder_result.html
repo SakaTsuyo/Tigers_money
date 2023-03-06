@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+    {% block content %}
+    <div class = 'answer'>
+        <p class="money">{{money}}万円</p>
+    </div>
+<div class="result">
+    <p>
+        <label><span>打率</label>
+        {{fielder["average"]}}
+    </p>
+    <p>
+        <label><span>試合</label>
+            {{fielder["game_f"]}}
+    </p>
+    <p>
+        <label><span>打席数</label>
+            {{fielder["bat"]}}
+    </p>
+    <p>
+        <label><span>打数</label>
+            {{fielder["number"]}}
+    </p>
+    <p>
+        <label><span>安打</label>
+            {{fielder["hit_f"]}}
+    </p>
+    <p>
+        <label><span>本塁打</label>
+            {{fielder["HR"]}}
+    </p>
+    <p>
+        <label><span>打点</label>
+            {{fielder["RBI"]}}
+    </p>
+    <p>
+        <label><span>盗塁</label>
+            {{fielder["steal"]}}
+    </p>
+    <p>
+        <label><span>四球</label>
+            {{fielder["walk_f"]}}
+    </p>
+    <p>
+        <label><span>死球</label>
+            {{fielder["HP_f"]}}
+    </p>
+    <p>
+        <label><span>三振</label>
+            {{fielder["strikeout_f"]}}
+    </p>
+    <p>
+        <label><span>犠打</label>z
+            {{fielder["sacrifice"]}}
+    </p>
+    <p>
+        <label><span>併殺打</label>
+            {{fielder["double"]}}
+    </p>
+    <p>
+        <label><span>出塁率</label>
+            {{fielder["base"]}}
+    </p>
+    <p>
+        <label><span>長打率</label>
+            {{fielder["slugging"]}}
+    </p>
+    <p>
+        <label><span>OPS</label>
+            {{fielder["OPS"]}}
+    </p>
+</div>
+
+<a href="/">ホーム戻る</a>
+<a href="/fielder">入力に戻る</a>
+{% endblock %}
